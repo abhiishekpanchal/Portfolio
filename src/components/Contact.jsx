@@ -9,7 +9,7 @@ import { SectionWrapper } from "./hoc";
 import { slideIn } from "../utils/motion";
 import { toast } from "react-hot-toast";
 import 'dotenv/config'
- debugger
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({

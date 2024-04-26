@@ -31,7 +31,7 @@ function Skills({ name, icon, index }) {
         }}>
         <div
           className={` cursor-pointer `}
-        >
+        > {icon && icon.src && (
           <img title={name}
             alt={name}
             width={85}
@@ -39,6 +39,7 @@ function Skills({ name, icon, index }) {
             src={icon.src}
             className="  cursor-pointer object-cover"
           />
+        )}
         </div>
       </motion.div>
     </motion.div>

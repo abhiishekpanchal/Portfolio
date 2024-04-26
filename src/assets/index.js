@@ -25,6 +25,11 @@ import express from "./tech/express.png";
 import java from "./tech/java.png";
 import jwt from "./tech/jwt.svg";
 import nextauth from "./tech/nextauth.png";
+import cpp from "../assets/cpp.png";
+import tableau from "../assets/tableau.png";
+import powerbi from "../assets/powerbi.png";
+import sql from "../assets/sql.png";
+import springboot from "../assets/springboot.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -73,4 +78,9 @@ export {
   java,
   jwt,
   nextauth,
+  cpp,
+  springboot,
+  sql,
+  tableau,
+  powerbi,
 };

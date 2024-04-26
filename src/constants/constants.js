@@ -15,7 +15,12 @@ import {
   nextjs,
   express,
   java,
-  jwt
+  jwt,
+  sql,
+  tableau,
+  powerbi,
+  springboot,
+  cpp,
 } from "../assets";
 import abc from "../assets/Quickmeet.png"
 import def from "../assets/LMS.png"
@@ -53,22 +58,16 @@ const services = [
     title: "Programmer",
     icon: backend,
   },
-  // {
-  //   title: "Creator",
-  //   icon: creator,
-  // },
 ];
 
 const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-    position: [0, 0, 0],
   },
   {
     name: "Next JS",
     icon: nextjs,
-    position: [2, 0, 0],
   },
   {
     name: "Express JS",
@@ -79,14 +78,6 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -94,14 +85,6 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
   {
     name: "git",
     icon: git,
@@ -119,21 +102,25 @@ const technologies = [
     icon: java,
   },
   {
-    name: "JWT",
-    icon: jwt,
+    name: "C++",
+    icon: cpp,
   },
-  // {
-  //   name: "NextAuth",
-  //   icon: nextauth,
-  // },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
+  {
+    name: "Springboot",
+    icon: springboot,
+  }, 
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "Tableau",
+    icon: tableau,
+  },
+  {
+    name: "Power BI",
+    icon: powerbi,
+  },
 ];
 
 const projects = [

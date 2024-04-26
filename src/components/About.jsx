@@ -9,6 +9,8 @@ import { fadeIn, textVariant } from "../utils/motion";
 import Image from "next/image";
 import color_sharp from "../assets/color_sharp.png";
 import astronaut from "../assets/header.svg";
+import Resume from "./Abhishek_.pdf";
+
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'
@@ -38,6 +40,13 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  const handleDownloadResume = () => {
+    // Create a temporary anchor element
+    const anchor = document.createElement('a');
+    anchor.href = "/Abhishek_.pdf"; // Assuming Resume is the path to your PDF file
+    anchor.download = 'Abhishek_Resume.pdf'; // Set the desired filename for the download
+    anchor.click(); // Trigger the click event to start the download
+  };
   return (
     <>
       <div className='relative overflow-hidden lg:overflow-visible'>
@@ -49,10 +58,10 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary text-[18px] max-w-3xl leading-[30px] font-semibold'
         >
-          I'm an experienced software developer proficient in JavaScript, specializing in React for front-end 
-          and Spring Boot for Java-based back-end solutions. With a keen eye for detail and strong problem-solving 
+          I'm an experienced software developer proficient in JavaScript, specializing in React for front-end
+          and Spring Boot for Java-based back-end solutions. With a keen eye for detail and strong problem-solving
           skills, I collaborate closely with clients to create efficient, scalable, and user-friendly applications.
-          My dedication to staying current with the latest technologies ensures I can adapt swiftly to new challenges. 
+          My dedication to staying current with the latest technologies ensures I can adapt swiftly to new challenges.
           Let's bring your ideas to life!
         </motion.p>
         <Image src={color_sharp} alt="color-sharp" className="absolute z-[-1] h-80 -left-60 w-screen -top-20" />
@@ -63,6 +72,42 @@ const About = () => {
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
+      </div>
+      <div className="mt-20 flex-wrap justify-center md:flex">
+      <a
+  href="https://drive.google.com/file/d/1LBb-qIqGwy8avAdVMfoTQr4PmyfLm5VW/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="overflow-hidden relative flex justify-center items-center w-32 p-2 h-12 bg-violet text-white border border-10 border-light-purple rounded-md text-xl font-bold cursor-pointer relative z-10 group"
+>
+  Resume
+  <span
+    className="absolute w-36 h-32 -top-8 -left-2 bg-white-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-right"
+    style={{ 
+      backgroundColor: "#f2e6ff"
+    }}
+  ></span>
+  <span
+    className="absolute w-36 h-32 -top-8 -left-2 bg-violet-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-right"
+    style={{ 
+      backgroundColor: "rgb(64, 14, 164) " 
+    }}
+  ></span>
+  <span
+    className="absolute w-36 h-32 -top-8 -left-2 bg-violet-600 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-right"
+    style={{ 
+      backgroundColor: " #000000"
+    }}
+  ></span>
+  <span
+    className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10"
+  >Hire me!</span>
+</a>
+
+
+
+
+
       </div>
     </>
   );
