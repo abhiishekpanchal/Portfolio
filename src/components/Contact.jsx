@@ -30,7 +30,9 @@ const Contact = () => {
     });
   };
 
- const handleSubmit = async (e) => {
+  emailjs.init(process.env.PUBLIC_KEY);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!form.name || !form.email || !form.message) {
@@ -45,7 +47,7 @@ const Contact = () => {
         from_name: form.name,
         to_name: "Abhishek Panchal",
         from_email: form.email,
-        to_email: "abhishekp.280403@gmail.com",
+        to_email: "abhishekp.workspace@gmail.com",
         message: form.message,
       };
 
@@ -68,6 +70,8 @@ const Contact = () => {
         message: "",
       });
     } catch (error) {
+      console.log(process.env.TEMPLATE_ID);
+      console.log(error);
       console.error('Failed to send email:', error);
       setLoading(false);
       toast.error("Oops! Something went wrong. Please try again.");

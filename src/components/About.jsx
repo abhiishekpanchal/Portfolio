@@ -58,11 +58,11 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary text-[18px] max-w-3xl leading-[30px] font-semibold'
         >
-          I'm an experienced software developer proficient in JavaScript, specializing in React for front-end
-          and Spring Boot for Java-based back-end solutions. With a keen eye for detail and strong problem-solving
-          skills, I collaborate closely with clients to create efficient, scalable, and user-friendly applications.
-          My dedication to staying current with the latest technologies ensures I can adapt swiftly to new challenges.
-          Let's bring your ideas to life!
+          I'm an experienced software developer proficient in JavaScript, with a strong focus on React and Next.js for front-end
+          development, and Spring Boot for Java-based back-end solutions. I have in-depth knowledge of both SQL and No-SQL databases, 
+          allowing me to design and manage data effectively. With a keen eye for detail and robust problem-solving skills, I work 
+          closely with clients to create efficient, scalable, and user-friendly applications. My commitment to staying up-to-date 
+          with the latest technologies ensures I can quickly adapt to new challenges and bring your ideas to life!
         </motion.p>
         <Image src={color_sharp} alt="color-sharp" className="absolute z-[-1] h-80 -left-60 w-screen -top-20" />
         <Image src={astronaut} alt="astronaut" className="absolute z-[-1] h-80 -right-20 animation top-28" />
@@ -75,7 +75,7 @@ const About = () => {
       </div>
       <div className="mt-20 flex-wrap justify-center md:flex">
       <a
-  href="https://drive.google.com/file/d/1LBb-qIqGwy8avAdVMfoTQr4PmyfLm5VW/view?usp=sharing"
+  href="https://drive.google.com/file/d/18DvYno9pb_MDEg_eRiAnFsS4jW-rG18-/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="overflow-hidden relative flex justify-center items-center w-32 p-2 h-12 bg-violet text-white border border-10 border-light-purple rounded-md text-xl font-bold cursor-pointer relative z-10 group"

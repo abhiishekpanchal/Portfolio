@@ -3,27 +3,26 @@ import {
   backend,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   nextjs,
   express,
   java,
-  jwt,
   sql,
   tableau,
   powerbi,
   springboot,
   cpp,
+  mongodb,
+  redux,
 } from "../assets";
-import abc from "../assets/Quickmeet.png"
-import def from "../assets/LMS.png"
+import quickmeet from "../assets/Quickmeet.png"
+import truehomes from '../assets/TrueHomes.png'
+import groovebox from '../assets/GrooveBox.png'
 
 export const navLinks = [
   {
@@ -70,6 +69,10 @@ const technologies = [
     icon: nextjs,
   },
   {
+    name: "Mongo DB",
+    icon: mongodb,
+  },
+  {
     name: "Express JS",
     icon: express,
   },
@@ -84,6 +87,10 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Redux",
+    icon: redux,
   },
   {
     name: "git",
@@ -125,6 +132,42 @@ const technologies = [
 
 const projects = [
   {
+    name: "GrooveBox",
+    description:
+      "This is a free music streaming web application built with Next.js and powered by the Saavn API. The app allows users to search and stream music from a vast collection of songs available on the Saavn platform.",
+    features: [
+      "User authentication using NextAuth.js with JWT and OAuth providers.",
+      "Redux to Manage app state effectively.",
+      "Play, pause, skip, and control the playback of songs.",
+      "Users can Create, update and delete their own playlists.",
+      "Add songs to favorites in one click.",
+      "Auto adds similar songs to the queue.",
+      "Swipe and touch gestures for touch-responsive devices.",
+      "Display song details such as title, artist, album, and album artwork.",
+    ],
+    tags: [
+      {
+        name: "SaavnAPI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NextJs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: groovebox,
+    source_code_link: "https://github.com/abhiishekpanchal/GrooveBox",
+    live_link: "#",
+  },
+  {
     name: "Quickmeet",
     description:
       "A web app integrating video calls and collaborative whiteboarding for real-time virtual collaboration, built with HTML, CSS, JavaScript, Socket.io, WebRTC.",
@@ -154,24 +197,19 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: abc,
+    image: quickmeet,
     source_code_link: "https://github.com/abhiishekpanchal/Meet-WhiteBoard",
     live_link: "https://meet-whiteboard.onrender.com/",
   },
   {
-    name: "Library Management System",
+    name: "TrueHomes",
     description:
-      "A comprehensive web-based Library Management System that is built using Springboot framework and MySQL database.",
+      "A MERN stack-based real estate platform allowing users to view properties for rent and sale, create listings with images, and search, sort, and filter properties efficiently. It offers a responsive design for seamless browsing on any device.",
     features: [
-      "User authentication using NextAuth.js with JWT and OAuth providers.",
-      "Redux to Manage app state effectively.",
-      "Play, pause, skip, and control the playback of songs.",
-      "Users can Create, update and delete their own playlists.",
-      "Add songs to favorites in one click.",
-      "Auto adds similar songs to the queue.",
-      "Swipe and touch gestures for touch-responsive devices.",
-      "Display song details such as title, artist, album, and album artwork.",
-      "PWA (Progressive Web App) support. ",
+      "Property Listings: Browse properties for rent and sale with detailed info and images.",
+      "Create Listings: Add and manage your property listings with images and descriptions.",
+      "Search & Filter: Find properties by location, price, type, and more with powerful filters.",
+      "Persistent Storage: Data is saved in localStorage, ensuring listings persist after page refresh.",
     ],
     tags: [
       {
@@ -187,110 +225,30 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "Springboot",
+        name: "ReactJs",
         color: "orange-text-gradient",
       },
       {
-        name: "MySQL",
+        name: "MongoDB",
         color: "blue-text-gradient",
       },
       {
-        name: "thymeLeaf",
+        name: "ExpressJs",
         color: "green-text-gradient",
       },
+      {
+        name: "NodeJs",
+        color: "orange-text-gradient",
+      },
     ],
-    image: def,
-    source_code_link: "https://github.com/abhiishekpanchal/Library-Management-System-",
-    live_link: "https://hayasaka.live/",
+    image: truehomes,
+    source_code_link: "https://github.com/abhiishekpanchal/True-home",
+    live_link: "https://true-homes.onrender.com/",
   },
 ];
-
-// const experiences = [
-//   {
-//     title: "React.js Developer",
-//     company_name: "Starbucks",
-//     icon: starbucks,
-//     iconBg: "#383E56",
-//     date: "March 2020 - April 2021",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "React Native Developer",
-//     company_name: "Tesla",
-//     icon: tesla,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2021 - Feb 2022",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Web Developer",
-//     company_name: "Shopify",
-//     icon: shopify,
-//     iconBg: "#383E56",
-//     date: "Jan 2022 - Jan 2023",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Full stack Developer",
-//     company_name: "Meta",
-//     icon: meta,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2023 - Present",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-// ];
-
-// const testimonials = [
-//   {
-//     testimonial:
-//       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-//     name: "Sara Lee",
-//     designation: "CFO",
-//     company: "Acme Co",
-//     image: "https://randomuser.me/api/portraits/women/4.jpg",
-//   },
-//   {
-//     testimonial:
-//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-//     name: "Chris Brown",
-//     designation: "COO",
-//     company: "DEF Corp",
-//     image: "https://randomuser.me/api/portraits/men/5.jpg",
-//   },
-//   {
-//     testimonial:
-//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-//     name: "Lisa Wang",
-//     designation: "CTO",
-//     company: "456 Enterprises",
-//     image: "https://randomuser.me/api/portraits/women/6.jpg",
-//   },
-// ];
 
 export {
   services,
   technologies,
-  //  experiences,
-  //  testimonials,
   projects,
 };
